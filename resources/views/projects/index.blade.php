@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Laravel 8 CRUD </h2>
+                <h2>PHP FRAMEX</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('projects.create') }}" title="Create a project"> <i class="fas fa-plus-circle"></i>
+                <a class="btn btn-success" href="{{ route('projects.create') }}" title="Agregar Libro"> <i class="fas fa-plus-circle"></i>
                     </a>
             </div>
         </div>
@@ -21,21 +21,19 @@
 
     <table class="table table-bordered table-responsive-lg">
         <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Introduction</th>
-            <th>Location</th>
-            <th>Cost</th>
-            <th>Date Created</th>
-            <th width="280px">Action</th>
+            <th>ID</th>
+            <th>Titulo</th>
+            <th>Idioma</th>
+            <th>Autor</th>
+            <th>Creado:</th>
+            <th width="280px">Acciones:</th>
         </tr>
         @foreach ($projects as $project)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $project->name }}</td>
-                <td>{{ $project->introduction }}</td>
-                <td>{{ $project->location }}</td>
-                <td>{{ $project->cost }}</td>
+                <td>{{ $project->titulo }}</td>
+                <td>{{ $project->idioma }}</td>
+                <td>{{ $project->autor }}</td>
                 <td>{{ date_format($project->created_at, 'jS M Y') }}</td>
                 <td>
                     <form action="{{ route('projects.destroy', $project->id) }}" method="POST">

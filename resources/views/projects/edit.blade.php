@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Project</h2>
+                <h2>Edit Book</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i
@@ -31,29 +31,38 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $project->name }}" class="form-control" placeholder="Name">
+                    <strong>Titulo:</strong>
+                    <input type="text" name="titulo" value="{{ $project->titulo }}" class="form-control" placeholder="Titulo">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Introduction:</strong>
-                    <textarea class="form-control" style="height:50px" name="introduction"
-                        placeholder="Introduction">{{ $project->introduction }}</textarea>
+                    <strong>Edicion:</strong>
+                    <input type="text" name="edicion" value="{{ $project->edicion }}" class="form-control" placeholder="Edicion"></input>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Location:</strong>
-                    <input type="text" name="location" class="form-control" placeholder="{{ $project->location }}"
-                        value="{{ $project->location }}">
+                    <strong>Copyright:</strong>
+                    <input type="text" name="copyright"  value="{{ $project->copyright }}" class="form-control" placeholder="Copyright">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Cost:</strong>
-                    <input type="number" name="cost" class="form-control" placeholder="{{ $project->cost }}"
-                        value="{{ $project->location }}">
+                    <strong>Idioma:</strong>
+                    <input type="text" name="idioma"  value="{{ $project->idioma }}" class="form-control" placeholder="Idioma">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Num. Paginas:</strong>
+                    <input type="text" name="num_pag"  value="{{ $project->num_pag }}" class="form-control" placeholder="Numero de Paginas">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Autor:</strong>
+                    <input type="text" name="autor"  value="{{ $project->autor }}" class="form-control" placeholder="Autor">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

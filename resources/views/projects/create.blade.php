@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Add New Project</h2>
+                <h2>Agregar nuevo libro</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
@@ -28,27 +28,47 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Name:</strong>
-                    <input type="text" name="name" class="form-control" placeholder="Name">
+                    <strong>ID:</strong>
+                    <input type="text" name="id" class="form-control" placeholder="ID">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Introduction:</strong>
-                    <textarea class="form-control" style="height:50px" name="introduction"
-                        placeholder="Introduction"></textarea>
+                    <strong>Titulo:</strong>
+                    <input type="text" name="titulo" class="form-control" placeholder="Titulo">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Location:</strong>
-                    <input type="text" name="location" class="form-control" placeholder="Location">
+                    <strong>Edicion:</strong>
+                    <input type="text" class="form-control" name="edicion"
+                        placeholder="Edicion"></input>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Cost:</strong>
-                    <input type="number" name="cost" class="form-control" placeholder="Cost">
+                    <strong>Copyright:</strong>
+                    <input type="text" name="copyright" class="form-control" placeholder="Copyright">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Idioma:</strong>
+                    <input type="text" name="idioma" class="form-control" placeholder="Idioma">
+                </div>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Num. Paginas:</strong>
+                    <input type="number" name="num_pag" class="form-control" placeholder="Numero de Paginas">
+                </div>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Autor:</strong>
+                    <input type="text" name="autor" class="form-control" placeholder="Autor">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

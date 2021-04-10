@@ -17,26 +17,20 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
-                {{ $project->name }}
+                <strong>Titulo:</strong>
+                {{ $project->titulo }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Introduction:</strong>
-                {{ $project->introduction }}
+                <strong>Idioma:</strong>
+                {{ $project->idioma }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Location:</strong>
-                {{ $project->location }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Cost:</strong>
-                {{ $project->cost }}
+                <strong>Autor:</strong>
+                {{ $project->autor }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
